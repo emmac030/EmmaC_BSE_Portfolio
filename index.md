@@ -1,9 +1,9 @@
-# Project Name Here
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+# Posture Corrector 
+My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a wedged yoga block with pressure sensors that will tell if the user is in a bad posture based on the pressure the user exerts on the sensor. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| FirstName LastInitialOnly | School Name | Electrical Engineering | Incoming Senior
+| Emma C | Lynbrook High School | Engineering | Incoming Sophome 
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
