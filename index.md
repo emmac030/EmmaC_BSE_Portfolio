@@ -5,7 +5,7 @@ My project is a posture corrector that reminds a user to sit properly once they 
 |:--:|:--:|:--:|:--:|
 | Emma C | Lynbrook High School | Engineering | Incoming Sophome 
 
-<! **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+<!-- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](logo.svg)
   
@@ -40,14 +40,14 @@ For your first milestone, describe what your project is and how you plan to buil
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>> -->
 
 # Starter Project 
 To explain a little about what my project is, when the motion sensor detects motion, then the LED light turns on. The PIR sensor has two settings, one being LOW and one being HIGH. LOW corresponds to the value 0 and HIGH corresponds to the value 1. When the sensor detects something, then the value changes from 0 to 1, causing the light to turn on. One challenge that took a long time to troubleshoot was to figure out why my LED light was always on. After printing the value, I found out that the sensor kept detecting motion, causing the value to stay at 1 and the light to stay on. Switching the ground and the 5 volt jumper wire fixed the problem because my sensor didn’t specify which port was the positive versus negative, so I plugged them into the wrong ports.   
 
 <iframe width="1074" height="603" src="https://www.youtube.com/embed/l6ldjOKdyIM" title="Emma C. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -89,4 +89,4 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+To watch the BSE tutorial on how to create a portfolio, click here.--> 
