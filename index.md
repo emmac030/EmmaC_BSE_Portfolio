@@ -36,12 +36,12 @@ My project is a device that is used to ensure that the user is sitting in a good
 
 A big challenge and problem with this sensor is that it is extremely inconsistent and not as sensitive as I would like it to be for my project because the Velostat often moves in between the pieces of neoprene making it hard for the reading to be accurate often. So instead of using the Velostat pressure sensor, my next step is to figure how to use the flex sensor; a pre-made sensor for my project. 
 
-<iframe width="537" height="301.5" src="https://www.youtube.com/embed/OPL-LPEhqJY" title="Emma C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="537" height="301.5" src="https://www.youtube.com/embed/OPL-LPEhqJY" title="Emma C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
 # Starter Project 
 To explain a little about what my project is, when the motion sensor detects motion, then the LED light turns on. The PIR sensor has two settings, one being LOW and one being HIGH. LOW corresponds to the value 0 and HIGH corresponds to the value 1. When the sensor detects something, then the value changes from 0 to 1, causing the light to turn on. One challenge that took a long time to troubleshoot was to figure out why my LED light was always on. After printing the value, I found out that the sensor kept detecting motion, causing the value to stay at 1 and the light to stay on. Switching the ground and the 5 volt jumper wire fixed the problem because my sensor didn’t specify which port was the positive versus negative, so I plugged them into the wrong ports.   
 
-<iframe width="537" height="301.5" src="https://www.youtube.com/embed/l6ldjOKdyIM" title="Emma C. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="537" height="301.5" src="https://www.youtube.com/embed/l6ldjOKdyIM" title="Emma C. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
 <!--# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
