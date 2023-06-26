@@ -1,5 +1,5 @@
-<!--# Posture Corrector 
-My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a wedged yoga block with pressure sensors that will tell if the user is in a bad posture based on the pressure the user exerts on the sensor. -->
+# Posture Corrector 
+<!--My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a wedged yoga block with pressure sensors that will tell if the user is in a bad posture based on the pressure the user exerts on the sensor. -->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
