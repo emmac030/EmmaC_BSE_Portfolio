@@ -51,23 +51,72 @@ One challenge that I had to troubleshoot was to figure out why my LED light was 
 
 
 <!--# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.  -->
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
+const int ledPin = 3;   //pin 3 has PWM funtion
+const int flexPin = A0; //pin A0 to read analog input
+
+#include <FastLED.h>
+
+#define LED_PIN     6
+#define NUM_LEDS    60
+#define BRIGHTNESS  64
+#define LED_TYPE    WS2812B
+#define COLOR_ORDER GRB
+CRGB leds[NUM_LEDS];
+
+#define UPDATES_PER_SECOND 100
+
+//Variables:
+int value; //save analog value
+int baseValue =  0;
+
+
+void setup(){
+
+// Flex sensor code
+
+  pinMode(ledPin, OUTPUT);  //Set pin 3 as 'output'
+  Serial.begin(9600);       //Begin serial communication
+  baseValue = analogRead(flexPin); 
+  
+  delay( 500 ); // power-up safety delay
+    FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
+    FastLED.setBrightness(  BRIGHTNESS );
+    
+    FastLED.show();
+    fill_solid( leds, 60, CRGB::Black);
+
+
+
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop(){
+
+// Flex sensor code
+
+  value = analogRead(flexPin); 
+  //value = map(value, 445, 540, 90, 180);
+  Serial.print(value);          
+  if (value > baseValue + 20) {
+    Serial.print(" Bad posture");
+    FastLED.show();
+    fill_solid( leds, 60, CRGB::Red);
+  } else {
+    FastLED.show();
+    fill_solid( leds, 60, CRGB::Black);
+  }
+  Serial.println();
+  value = map(value, 700, 900, 0, 255);//Map value 0-1023 to 0-255 (PWM)
+  analogWrite(ledPin, value);          //Send PWM value to led
+  delay(100);                          //Small delay
 
 }
-``` -->
+}
+``` 
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
