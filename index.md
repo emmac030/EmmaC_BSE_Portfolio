@@ -3,7 +3,7 @@ My project is a posture corrector that reminds a user to sit properly once they 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Emma C | Lynbrook High School | Engineering | Incoming Sophome 
+| Emma C | Lynbrook High School | Engineering | Incoming Sophomore  
 
 <!-- **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
@@ -20,31 +20,33 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
-<!--# Second Milestone
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+# Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<iframe width="537" height="301.5" src="https://www.youtube.com/embed/vHJHWSZpKZU" title="Emma C Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+My second Milestone was to get the flex sensor working with my project because the velostat pressure sensor was too inconsistent and not accurate enough. In my project, the user sits on the ball with their lower back touching the flex sensor. Then, they press the reset button on the arduino and this restarts the code. The pressure that the flex sensor senses is then set as the baseline pressure for the user. If they lean back and slouch into a bad sitting posture, then the resistance on the flex sensor increases. If the value increases over 20 of the baseline pressure, then the serial monitor prints “bad posture.” In order to achieve this, I used an if statement.
+
+One challenge that I had for this milestone was the coding part. I didn’t save my code when I restarted my Arduino IDE to get the serial plotter, so I lost the code that originally worked on my flex sensor. Another challenge that I had while completing this milestone was the range for mapping values of my flex sensor. Because the resistor that I was using and the mapping values of the code didn’t match, my output values were very out of range. To make sure that the serial monitor was printing out the correct values, I had to recalibrate the sensor using a multimeter, then map those values to be printed in degrees. 
+
+My next step is to connect the flex sensor to the LED strips so that when the user is in a bad posture, the LED strip lights up. 
+
 
 # First Milestone
 
 <iframe width="537" height="301.5" src="https://www.youtube.com/embed/OPL-LPEhqJY" title="Emma C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
-My project is a device that is used to ensure that the user is sitting in a good posture. My first step to this project was to create a velostat pressure sensor using 4 materials; velostat, neoprene fabric, conductive thread and conductive fabric. The neoprene sandwiches the velostat. Both pieces of neoprene have the same stitching pattern made with conductive thread. When you place both pieces of neoprene on top of each other, the stitches make the figure "x" which allows the current to flow through. The Velostat then is placed between these pieces of neoprene and measures the current going between the pieces of thread. Once you apply pressure on the sensor, then the current is able to flow through and the arduino measures the current that flows through.  
+My project is a device that is used to ensure that the user is sitting in a good posture. My first step for this project was to create a velostat pressure sensor using 4 materials; velostat; a conductive material, neoprene; which is basic fabric, conductive thread and conductive fabric. There are two pieces of neoprene that sandwich the velostat. Both pieces of neoprene have the same stitching pattern made with conductive thread. When you place both pieces of neoprene on top of each other, the stitches make the figure "x." When the neoprene is pressed, the two touching pieces of conductive thread allow current to pass through. The Velostat, which is a pressure sensitive material that is conductive is placed between the two pieces of neoprene. Once you apply pressure on the sensor, the current is able to flow through and the arduino measures the current that flows through.  
 
-A big challenge and problem with this sensor is that it is extremely inconsistent and not as sensitive as I would like it to be for my project. The Velostat often moves in between the pieces of neoprene making it hard for the arduino's reading to be consistently accurate. Instead of using the velostat pressure sensor, my next step is to figure how to use the flex sensor for my project. 
+A big challenge that I had with this self - made sensor is that it is extremely inconsistent and not as sensitive as I would like it to be for my project. In order to ensure that the sensor does not start with a high value and is accurate, it is important to sew the two pieces of neoprene together in a loose way. However, because the fabric is sewn together loosely, the velostat often moves in between the pieces of neoprene making it hard for the arduino's reading to be consistently accurate. Instead of using the velostat pressure sensor, my next step is to figure how to use the flex sensor for my project. 
 
 
 # Starter Project 
 
 <iframe width="537" height="301.5" src="https://www.youtube.com/embed/l6ldjOKdyIM" title="Emma C. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
-For my starter project, I chose the custom arduino project where an LED light turns on when it senses motion. The PIR sensor has two settings, one being LOW and one being HIGH. LOW corresponds to the value 0 while HIGH corresponds to the value 1. When the sensor detects something, then the value changes from 0 to 1, causing the light to turn on. One challenge that took a long time to troubleshoot was to figure out why my LED light was constantly on. After printing the value from the sensor, I found out that the sensor kept detecting motion, causing the value to stay at 1 and the light to stay on. Switching the ground and the 5 volt jumper wire fixed the problem because my sensor didn’t specify which port was the positive versus negative. My next step is to move on to my main project. 
+For my starter project, I chose the custom arduino project where an LED light turns on when it senses motion. The PIR sensor has two settings, one being LOW and one being HIGH. LOW corresponds to the value 0 while HIGH corresponds to the value 1. When the sensor detects something, then the value changes from 0 to 1, causing the light to turn on. 
+
+One challenge that I had to troubleshoot was to figure out why my LED light was constantly on. After printing the value from the sensor, I found out that the sensor kept detecting motion, causing the value to stay at 1 and the light to stay on. Switching the ground and the 5 volt jumper wire fixed the problem because my sensor didn’t specify which port was the positive versus negative. My next step is to move on to my main project.           
 
 
 
