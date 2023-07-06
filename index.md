@@ -61,6 +61,9 @@ const int flexPin = A0; //pin A0 to read analog input
 
 #include <FastLED.h>
 
+#define rxPin 0
+#define txPin 1
+
 #define LED_PIN     6
 #define NUM_LEDS    60
 #define BRIGHTNESS  64
@@ -71,50 +74,54 @@ CRGB leds[NUM_LEDS];
 #define UPDATES_PER_SECOND 100
 
 //Variables:
-int value; //save analog value
+int value; 
 int baseValue =  0;
 
+int sent = -1; 
+int time = 0;
 
 void setup(){
 
-// Flex sensor code
-
-  pinMode(ledPin, OUTPUT);  //Set pin 3 as 'output'
-  Serial.begin(9600);       //Begin serial communication
+  pinMode(ledPin, OUTPUT);  
+  pinMode(txPin, OUTPUT);
+  Serial.begin(9600);       
   baseValue = analogRead(flexPin); 
   
   delay( 500 ); // power-up safety delay
-    FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
-    FastLED.setBrightness(  BRIGHTNESS );
-    
-    FastLED.show();
-    fill_solid( leds, 60, CRGB::Black);
-
-
+  FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalLEDStrip );
+  FastLED.setBrightness(  BRIGHTNESS );
+  
+  FastLED.show();
+  fill_solid( leds, 60, CRGB::Black);
 
 }
 
 void loop(){
 
-// Flex sensor code
-
-  value = analogRead(flexPin); 
-  //value = map(value, 445, 540, 90, 180);
-  Serial.print(value);          
+  value = analogRead(flexPin);
+  // Serial.println(value);
+  byte send = 1;          
   if (value > baseValue + 20) {
-    Serial.print(" Bad posture");
+    // Serial.print(value);
+    // Serial.println(" Bad posture");
     FastLED.show();
     fill_solid( leds, 60, CRGB::Red);
+    Serial.write(send);
+    Serial.flush(); 
+    delay(200);
+  
   } else {
     FastLED.show();
     fill_solid( leds, 60, CRGB::Black);
+    send = 0;
+    Serial.write(send);
+    Serial.flush(); 
+    delay(200);
   }
-  Serial.println();
-  value = map(value, 700, 900, 0, 255);//Map value 0-1023 to 0-255 (PWM)
-  analogWrite(ledPin, value);          //Send PWM value to led
-  delay(100);                          //Small delay
 
-}
+  analogWrite(ledPin, value);          
+  delay(100);                          
+
 }
 ``` 
 
@@ -143,10 +150,9 @@ void loop(){
 | Screw Terminal Barrel Jack |  Used to connect the 5V and ground wires to the power source | $4.99 | <a href="https://www.amazon.com/Connector-Barrel-Adapter-Security-Camera/dp/B09S3S6RYC/ref=sr_1_11?crid=UT45N7OH2BQX&keywords=screw+terminal+barrel+jack&qid=1687992329&sprefix=screw+terminal+barrel+jack%2Caps%2C139&sr=8-11"> Link </a> |
 
 
-<!--# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesom  e examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
+# Other Resources/Examples
+- [Example 1]([https://trashytuber.github.io/YimingJiaBlueStamp/](https://ullisroboterseite.de/android-AI2-notifier-chanref.html#CreateNotification))
+<!--- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.--> 
