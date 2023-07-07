@@ -50,7 +50,9 @@ One challenge that I had to troubleshoot was to figure out why my LED light was 
 
 # Schematics 
 
-Flex Sensor 
+[Flex Sensor](logo.svg)
+
+
 
 # Code
 
