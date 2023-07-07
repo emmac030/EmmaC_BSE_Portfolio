@@ -148,7 +148,11 @@ void loop(){
 | 10K Ohms Resistor | Used to generate values for the flex sensor  | $0.75 | <a href="https://www.adafruit.com/product/2784"> Link </a> |
 |:--:|:--:|:--:|:--:|
 | Screw Terminal Barrel Jack |  Used to connect the 5V and ground wires to the power source | $4.99 | <a href="https://www.amazon.com/Connector-Barrel-Adapter-Security-Camera/dp/B09S3S6RYC/ref=sr_1_11?crid=UT45N7OH2BQX&keywords=screw+terminal+barrel+jack&qid=1687992329&sprefix=screw+terminal+barrel+jack%2Caps%2C139&sr=8-11"> Link </a> |
-
+| Android | Used to control the app and receive notifications  | $159.99 | <a href="[https://www.adafruit.com/product/2784](https://www.amazon.com/dp/B09MZBTMQQ/ref=twister_B0BTCN5QXV?_encoding=UTF8&psc=1)"> Link </a> |
+|:--:|:--:|:--:|:--:|
+| Screw Terminal Barrel Jack |  Used to connect the 5V and ground wires to the power source | $4.99 | <a href="https://www.amazon.com/Connector-Barrel-Adapter-Security-Camera/dp/B09S3S6RYC/ref=sr_1_11?crid=UT45N7OH2BQX&keywords=screw+terminal+barrel+jack&qid=1687992329&sprefix=screw+terminal+barrel+jack%2Caps%2C139&sr=8-11"> Link </a> |
+| Bluetooth Terminal | Used to send data wirelessly to app  | $9.99| <a href="https://www.amazon.com/DSD-TECH-HC-05-Pass-through-Communication/dp/B01G9KSAF6/ref=sr_1_3?crid=1YJUU51AP8LFK&keywords=hc05+bluetooth+module+for+arduino&qid=1688745485&sprefix=HC05+blueetoo%2Caps%2C158&sr=8-3"> Link </a> |
+|:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
 - [Example 1]([https://trashytuber.github.io/YimingJiaBlueStamp/](https://ullisroboterseite.de/android-AI2-notifier-chanref.html#CreateNotification))
