@@ -169,7 +169,7 @@ void loop(){
 |:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
-- [Notification Extension](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
+- [Notification Extension for MIT app inventor](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
 - [Project Proposal](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
 - [Github Page with app example](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
 
