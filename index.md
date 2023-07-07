@@ -1,4 +1,5 @@
-# Posture Corrector 
+# Posture Corrector
+
 My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a  deflated yoga ball with a flex sensor that will track if the user is in a bad posture based on the pressure the user exerts on the sensor. When the user applies more pressure on the sensor, the LED strip will light up and it will also send a notification to a phone telling the user to fix their posture. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -158,7 +159,5 @@ void loop(){
 
 # Other Resources/Examples
 - [Example 1](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
-<!---[Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Example 2](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
 
-To watch the BSE tutorial on how to create a portfolio, click here.--> 
