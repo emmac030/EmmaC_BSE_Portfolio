@@ -155,8 +155,8 @@ void loop(){
 |:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
-- [Example 1]([https://trashytuber.github.io/YimingJiaBlueStamp/](https://ullisroboterseite.de/android-AI2-notifier-chanref.html#CreateNotification))
-<!--- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
+- [Example 1](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
+<!---[Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.--> 
