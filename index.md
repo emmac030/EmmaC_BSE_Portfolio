@@ -165,6 +165,7 @@ void loop(){
 |:--:|:--:|:--:|:--:|
 
 # Other Resources/Examples
-- [Example 1](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
-- [Example 2](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
+- [Notification Extension](https://ullisroboterseite.de/android-AI2-notifier-ex1.html)
+- [Project Proposal](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
+- [Github Page with app example](https://docs.google.com/document/d/1xhWixS2698zkRHAhMSJYNNuPzSwUxVamy3Kj0IO0TNM/edit?usp=sharing)
 
