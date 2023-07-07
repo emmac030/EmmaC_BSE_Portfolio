@@ -50,8 +50,9 @@ One challenge that I had to troubleshoot was to figure out why my LED light was 
 
 # Schematics 
 
-[Flex Sensor](logo.svg)
+![Flex Sensor ](https://github.com/emmac030/EmmaC_BSE_Portfolio/assets/137341349/30fcfd32-a733-4849-990f-b41c0176221e)
 
+![Button](https://github.com/emmac030/EmmaC_BSE_Portfolio/assets/137341349/865a6266-e871-4d00-8d21-3644f70aa9a0)
 
 
 # Code
