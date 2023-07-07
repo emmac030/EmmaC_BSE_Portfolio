@@ -12,6 +12,8 @@ My project is a posture corrector that reminds a user to sit properly once they 
   
 # Final Milestone
 
+<iframe width="537" height="301.5" src="https://www.youtube.com/embed/E9a51JuBMAk" title="Emma C. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 My final milestone is to connect the flex sensor to the LED strip and tie my entire project to an app that shows notifications if the user isn’t sitting properly. To connect the LED strip to the flex sensor, I plugged in the 5 volt and ground pins into the breadboard, then hooked the breadboard to an external power source. Then, I connected the data pin to the arduino and wrote code to turn on the LEDs only if the user is in bad posture. 
 
 In order to send the user notifications on a phone, I had to first create an app on MIT app inventor. This app is connected to my arduino via a bluetooth module. The bluetooth module sends data from the arduino to the app wirelessly. In order for the app to update in real time, the data needs to be transmitted from the arduino to the app quickly. To do this, I wrote my code so that it sends one byte at a time in order for the app to update in real time. Serial.write puts the one byte in the buffer before it fills up, then serial.flush, which is the next line in the code, forces that byte to be sent right away. On the MIT app inventor, it reads the byte as either a 0 or 1. The 0 indicates that the user is in a good posture and the 1 indicates that the user is in bad posture. The difference between print and write is that serial.print sends characters while serial.write only sends binary. Serial.write works perfectly for this situation because I set the data that was to be sent to either 0 or 1; which is binary. The advantage of serial.flush is that it sends the data right when it is printed on the Arduino end to the app. This allows the data to be received from the phone quickly and accurately. 
@@ -25,8 +27,6 @@ Some challenges that I had with this process was connecting the app and phone wi
 The other challenge I had was to connect the phone notifications with the flex sensor readings. After using Serial.print to send the data from the arduino to the phone, the readings were very inconsistent, not accurate or updating to the app in time. To fix this I used Serial.write and Serial.flush. 
 
 One thing that I would do to improve my project is to work more on the app and make the interface more user friendly and sodder everything from my breadboard to a perf board to make it more permanent.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Second Milestone
 
