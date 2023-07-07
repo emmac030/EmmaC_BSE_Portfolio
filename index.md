@@ -1,5 +1,5 @@
 # Posture Corrector 
-My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a  yoga ball with a flex sensor that will tell if the user is in a bad posture based on the pressure the user exerts on the sensor. When the user applies more pressure on the sensor, the LED strip will light up. 
+My project is a posture corrector that reminds a user to sit properly once they slouch or move into a bad posture. The user will sit on a  deflated yoga ball with a flex sensor that will track if the user is in a bad posture based on the pressure the user exerts on the sensor. When the user applies more pressure on the sensor, the LED strip will light up and it will also send a notification to a phone telling the user to fix their posture. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -48,11 +48,11 @@ For my starter project, I chose the custom arduino project where an LED light tu
 
 One challenge that I had to troubleshoot was to figure out why my LED light was constantly on. After printing the value from the sensor, I found out that the sensor kept detecting motion, causing the value to stay at 1 and the light to stay on. Switching the ground and the 5 volt jumper wire fixed the problem because my sensor didn’t specify which port was the positive versus negative. My next step is to move on to my main project.           
 
+# Schematics 
 
+Flex Sensor 
 
-<!--# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.  -->
-
+<iframe width="537" height="301.5" src="https://www.youtube.com/embed/OPL-LPEhqJY" title="Emma C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 # Code
 
 ```c++
