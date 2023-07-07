@@ -52,7 +52,6 @@ One challenge that I had to troubleshoot was to figure out why my LED light was 
 
 Flex Sensor 
 
-<iframe width="537" height="301.5" src="https://www.youtube.com/embed/OPL-LPEhqJY" title="Emma C. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 # Code
 
 ```c++
